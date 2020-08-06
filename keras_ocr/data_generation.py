@@ -203,7 +203,7 @@ def get_fonts(cache_dir=None,
     #    sha256='d4d90c27a9bc4bf8fff1d2c0a00cfb174c7d5d10f60ed29d5f149ef04d45b700',
     #    filename='fonts.zip',
     #    cache_dir=cache_dir)
-    fonts_zip_path = 'fonts.zip'
+    fonts_zip_path = '/content/drive/My Drive/colab/keras-ocr/fonts.zip'
     fonts_dir = os.path.join(cache_dir, 'fonts')
     if len(glob.glob(os.path.join(fonts_dir, '**/*.ttf'))) != 2746:
         print('Unzipping fonts ZIP file.')
