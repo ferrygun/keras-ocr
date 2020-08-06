@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipython = "*"
+jupyterlab = "*"
+numpy = "*"
+matplotlib = "*"
+keras = "*"
+mypy = "*"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+yapf = "*"
+scikit-learn = "*"
+sphinx = "==1.8.3"
+m2r = "==0.2.1"
+tensorflow = "==2.1.0"  # See https://github.com/PyCQA/pylint/issues/3613
+Pillow = "==6.2.2"  # We need to do this because of https://github.com/pytorch/vision/issues/1714
+sphinx_rtd_theme = "==0.4.2"
+
+[packages]
+keras-ocr = {editable = true,path = "."}
+
+[requires]
+python_version = "3.7"
